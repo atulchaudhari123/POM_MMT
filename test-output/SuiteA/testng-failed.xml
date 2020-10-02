@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SuiteA]">
+  <test name="TestA(failed)">
+    <classes>
+      <class name="com.MMT.testcases.HotelSearchResultPageTest">
+        <methods>
+          <include name="applicationSetup"/>
+          <include name="verifyHotelSearchResult"/>
+        </methods>
+      </class> <!-- com.MMT.testcases.HotelSearchResultPageTest -->
+      <class name="com.MMT.testcases.HotelSearchPageTest">
+        <methods>
+          <include name="hotelsearchFieldTest"/>
+          <include name="applicationSetup"/>
+        </methods>
+      </class> <!-- com.MMT.testcases.HotelSearchPageTest -->
+    </classes>
+  </test> <!-- TestA(failed) -->
+</suite> <!-- Failed suite [SuiteA] -->
