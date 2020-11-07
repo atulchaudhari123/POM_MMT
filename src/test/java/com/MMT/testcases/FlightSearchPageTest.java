@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Collection;
 
 import org.apache.log4j.Logger;
+import org.junit.rules.ErrorCollector;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -17,7 +18,7 @@ import com.MMT.util.TestUtil;
 
 
 public class FlightSearchPageTest extends TestBase {
-	
+	 public ErrorCollector errCollector = new ErrorCollector();
 	FlightSearch flightSearch;
 	public static Logger APP_LOGS;
 //	public Logger APP_LOGS;
@@ -40,28 +41,29 @@ public class FlightSearchPageTest extends TestBase {
 	}
 
 	
-	@Test (priority=1)
-	public void FlightSearchPageTitleTest()
-	{
-		String title = flightSearch.ValidateSearchPageTitle();
-		APP_LOGS.debug("Page Title is = "+title);
-		Assert.assertEquals(title, "MakeMyTrip - #1 Travel Website 50% OFF on Hotels, Flights & Holiday");
-	}
-	
-	@Test (priority=2)
-	public void ValidateFlightImageTest()
-	{
-	try
-	{
-		boolean flag = flightSearch.ValidateFlightIcon();
-		Assert.assertTrue(false);
-	}
-	catch(Throwable t)
-	{
-		System.err.println("Logo issue");
-		
-	}}
-	
+//	@Test (priority=1)
+//	public void FlightSearchPageTitleTest()
+//	{
+//		String title = flightSearch.ValidateSearchPageTitle();
+//		APP_LOGS.debug("Page Title is = "+title);
+//		Assert.assertEquals(title, "MakeMyTrip - #1 Travel Website 50% OFF on Hotels, Flights & Holiday");
+//	}
+//	
+//	@Test (priority=2)
+//	public void ValidateFlightImageTest()
+//	{
+//	try
+//	{
+//		boolean flag = flightSearch.ValidateFlightIcon();
+//		Assert.assertTrue(false);
+//	}
+//	catch(Throwable t)
+//	{
+//		System.err.println("Logo issue");
+//		TestUtil.takeScreenShot("snap");
+//		errCollector.addError(t);
+//	}}
+//	
 
 	@Test (dataProvider = "getData")
 	public void searchFieldTest(String FlightFromCity, String FlightToCity) throws InterruptedException
