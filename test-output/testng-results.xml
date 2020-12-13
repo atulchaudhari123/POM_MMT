@@ -1,127 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-10-28T20:50:05 IST" name="Default suite" finished-at="2020-10-28T20:51:05 IST" duration-ms="59881">
+  <suite name="SuiteA" duration-ms="52757" started-at="2020-12-12T20:57:12 IST" finished-at="2020-12-12T20:58:05 IST">
     <groups>
     </groups>
-    <test started-at="2020-10-28T20:50:05 IST" name="Default test" finished-at="2020-10-28T20:51:05 IST" duration-ms="59881">
-      <class name="com.MMT.testcases.FlightSearchPageTest">
-        <test-method is-config="true" signature="applicationSetup()[pri:0, instance:com.MMT.testcases.FlightSearchPageTest@56620197]" started-at="2020-10-28T20:50:05 IST" name="applicationSetup" finished-at="2020-10-28T20:50:15 IST" duration-ms="9960" status="PASS">
+    <test name="TestA" duration-ms="52757" started-at="2020-12-12T20:57:12 IST" finished-at="2020-12-12T20:58:05 IST">
+      <class name="com.MMT.testcases.HotelSearchResultPageTest">
+        <test-method status="PASS" signature="applicationSetup()[pri:0, instance:com.MMT.testcases.HotelSearchResultPageTest@55183b20]" name="applicationSetup" is-config="true" duration-ms="13322" started-at="2020-12-12T20:57:37 IST" finished-at="2020-12-12T20:57:50 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- applicationSetup -->
-        <test-method signature="searchFieldTest(java.lang.String, java.lang.String)[pri:0, instance:com.MMT.testcases.FlightSearchPageTest@56620197]" started-at="2020-10-28T20:50:15 IST" name="searchFieldTest" data-provider="getData" finished-at="2020-10-28T20:50:42 IST" duration-ms="26926" status="FAIL">
+        <test-method status="PASS" signature="verifyHotelSearchResult(java.lang.String)[pri:0, instance:com.MMT.testcases.HotelSearchResultPageTest@55183b20]" name="verifyHotelSearchResult" duration-ms="14710" started-at="2020-12-12T20:57:50 IST" data-provider="getData" finished-at="2020-12-12T20:58:05 IST">
           <params>
             <param index="0">
               <value>
                 <![CDATA[Delhi]]>
               </value>
             </param>
-            <param index="1">
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHotelSearchResult -->
+      </class> <!-- com.MMT.testcases.HotelSearchResultPageTest -->
+      <class name="com.MMT.testcases.HotelSearchPageTest">
+        <test-method status="PASS" signature="applicationSetup()[pri:0, instance:com.MMT.testcases.HotelSearchPageTest@1bd4fdd]" name="applicationSetup" is-config="true" duration-ms="10392" started-at="2020-12-12T20:57:12 IST" finished-at="2020-12-12T20:57:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applicationSetup -->
+        <test-method status="PASS" signature="hotelsearchFieldTest(java.lang.String)[pri:3, instance:com.MMT.testcases.HotelSearchPageTest@1bd4fdd]" name="hotelsearchFieldTest" duration-ms="14248" started-at="2020-12-12T20:57:23 IST" data-provider="getData" finished-at="2020-12-12T20:57:37 IST">
+          <params>
+            <param index="0">
               <value>
-                <![CDATA[Mumbai]]>
+                <![CDATA[Delhi]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: element is not attached to the page document
-  (Session info: chrome=86.0.4240.111)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'DESKTOP-20FUL3E', ip: '192.168.43.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\atulc\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56537}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 7e9e29fd32ad26392e9e717458332c44]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=86.0.4240.111)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'DESKTOP-20FUL3E', ip: '192.168.43.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\atulc\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56537}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 7e9e29fd32ad26392e9e717458332c44
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
-at com.MMT.pages.FlightSearch.searchfields(FlightSearch.java:123)
-at com.MMT.testcases.FlightSearchPageTest.searchFieldTest(FlightSearchPageTest.java:69)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchFieldTest -->
-        <test-method is-config="true" signature="applicationkill()[pri:0, instance:com.MMT.testcases.FlightSearchPageTest@56620197]" started-at="2020-10-28T20:50:42 IST" name="applicationkill" finished-at="2020-10-28T20:50:43 IST" duration-ms="782" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- applicationkill -->
-        <test-method is-config="true" signature="applicationSetup()[pri:0, instance:com.MMT.testcases.FlightSearchPageTest@56620197]" started-at="2020-10-28T20:50:43 IST" name="applicationSetup" finished-at="2020-10-28T20:50:52 IST" duration-ms="8890" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- applicationSetup -->
-        <test-method signature="FlightSearchPageTitleTest()[pri:1, instance:com.MMT.testcases.FlightSearchPageTest@56620197]" started-at="2020-10-28T20:50:52 IST" name="FlightSearchPageTitleTest" finished-at="2020-10-28T20:50:52 IST" duration-ms="9" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FlightSearchPageTitleTest -->
-        <test-method is-config="true" signature="applicationkill()[pri:0, instance:com.MMT.testcases.FlightSearchPageTest@56620197]" started-at="2020-10-28T20:50:52 IST" name="applicationkill" finished-at="2020-10-28T20:50:53 IST" duration-ms="676" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- applicationkill -->
-        <test-method is-config="true" signature="applicationSetup()[pri:0, instance:com.MMT.testcases.FlightSearchPageTest@56620197]" started-at="2020-10-28T20:50:53 IST" name="applicationSetup" finished-at="2020-10-28T20:51:03 IST" duration-ms="10749" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- applicationSetup -->
-        <test-method signature="ValidateFlightImageTest()[pri:2, instance:com.MMT.testcases.FlightSearchPageTest@56620197]" started-at="2020-10-28T20:51:03 IST" name="ValidateFlightImageTest" finished-at="2020-10-28T20:51:04 IST" duration-ms="229" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateFlightImageTest -->
-        <test-method is-config="true" signature="applicationkill()[pri:0, instance:com.MMT.testcases.FlightSearchPageTest@56620197]" started-at="2020-10-28T20:51:04 IST" name="applicationkill" finished-at="2020-10-28T20:51:05 IST" duration-ms="957" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- applicationkill -->
-      </class> <!-- com.MMT.testcases.FlightSearchPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- hotelsearchFieldTest -->
+      </class> <!-- com.MMT.testcases.HotelSearchPageTest -->
+    </test> <!-- TestA -->
+  </suite> <!-- SuiteA -->
 </testng-results>
