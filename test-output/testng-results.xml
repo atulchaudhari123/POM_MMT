@@ -1,45 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="SuiteA" duration-ms="52757" started-at="2020-12-12T20:57:12 IST" finished-at="2020-12-12T20:58:05 IST">
+  <suite name="Default suite" duration-ms="86105" started-at="2020-12-14T09:34:46 IST" finished-at="2020-12-14T09:36:12 IST">
     <groups>
     </groups>
-    <test name="TestA" duration-ms="52757" started-at="2020-12-12T20:57:12 IST" finished-at="2020-12-12T20:58:05 IST">
-      <class name="com.MMT.testcases.HotelSearchResultPageTest">
-        <test-method status="PASS" signature="applicationSetup()[pri:0, instance:com.MMT.testcases.HotelSearchResultPageTest@55183b20]" name="applicationSetup" is-config="true" duration-ms="13322" started-at="2020-12-12T20:57:37 IST" finished-at="2020-12-12T20:57:50 IST">
+    <test name="Default test" duration-ms="86105" started-at="2020-12-14T09:34:46 IST" finished-at="2020-12-14T09:36:12 IST">
+      <class name="com.MMT.testcases.FlightSearchPageTest">
+        <test-method status="PASS" signature="applicationSetup()[pri:0, instance:com.MMT.testcases.FlightSearchPageTest@eb21112]" name="applicationSetup" is-config="true" duration-ms="11854" started-at="2020-12-14T09:34:46 IST" finished-at="2020-12-14T09:34:58 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- applicationSetup -->
-        <test-method status="PASS" signature="verifyHotelSearchResult(java.lang.String)[pri:0, instance:com.MMT.testcases.HotelSearchResultPageTest@55183b20]" name="verifyHotelSearchResult" duration-ms="14710" started-at="2020-12-12T20:57:50 IST" data-provider="getData" finished-at="2020-12-12T20:58:05 IST">
+        <test-method status="PASS" signature="searchFieldTest(java.lang.String, java.lang.String)[pri:0, instance:com.MMT.testcases.FlightSearchPageTest@eb21112]" name="searchFieldTest" duration-ms="40647" started-at="2020-12-14T09:34:58 IST" data-provider="getData" finished-at="2020-12-14T09:35:39 IST">
           <params>
             <param index="0">
               <value>
                 <![CDATA[Delhi]]>
               </value>
             </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyHotelSearchResult -->
-      </class> <!-- com.MMT.testcases.HotelSearchResultPageTest -->
-      <class name="com.MMT.testcases.HotelSearchPageTest">
-        <test-method status="PASS" signature="applicationSetup()[pri:0, instance:com.MMT.testcases.HotelSearchPageTest@1bd4fdd]" name="applicationSetup" is-config="true" duration-ms="10392" started-at="2020-12-12T20:57:12 IST" finished-at="2020-12-12T20:57:23 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- applicationSetup -->
-        <test-method status="PASS" signature="hotelsearchFieldTest(java.lang.String)[pri:3, instance:com.MMT.testcases.HotelSearchPageTest@1bd4fdd]" name="hotelsearchFieldTest" duration-ms="14248" started-at="2020-12-12T20:57:23 IST" data-provider="getData" finished-at="2020-12-12T20:57:37 IST">
-          <params>
-            <param index="0">
+            <param index="1">
               <value>
-                <![CDATA[Delhi]]>
+                <![CDATA[Mumbai]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- hotelsearchFieldTest -->
-      </class> <!-- com.MMT.testcases.HotelSearchPageTest -->
-    </test> <!-- TestA -->
-  </suite> <!-- SuiteA -->
+        </test-method> <!-- searchFieldTest -->
+        <test-method status="PASS" signature="applicationkill()[pri:0, instance:com.MMT.testcases.FlightSearchPageTest@eb21112]" name="applicationkill" is-config="true" duration-ms="738" started-at="2020-12-14T09:35:39 IST" finished-at="2020-12-14T09:35:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applicationkill -->
+        <test-method status="PASS" signature="applicationSetup()[pri:0, instance:com.MMT.testcases.FlightSearchPageTest@eb21112]" name="applicationSetup" is-config="true" duration-ms="15118" started-at="2020-12-14T09:35:40 IST" finished-at="2020-12-14T09:35:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applicationSetup -->
+        <test-method status="PASS" signature="FlightSearchPageTitleTest()[pri:1, instance:com.MMT.testcases.FlightSearchPageTest@eb21112]" name="FlightSearchPageTitleTest" duration-ms="9" started-at="2020-12-14T09:35:55 IST" finished-at="2020-12-14T09:35:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FlightSearchPageTitleTest -->
+        <test-method status="PASS" signature="applicationkill()[pri:0, instance:com.MMT.testcases.FlightSearchPageTest@eb21112]" name="applicationkill" is-config="true" duration-ms="677" started-at="2020-12-14T09:35:55 IST" finished-at="2020-12-14T09:35:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applicationkill -->
+        <test-method status="PASS" signature="applicationSetup()[pri:0, instance:com.MMT.testcases.FlightSearchPageTest@eb21112]" name="applicationSetup" is-config="true" duration-ms="15358" started-at="2020-12-14T09:35:55 IST" finished-at="2020-12-14T09:36:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applicationSetup -->
+        <test-method status="PASS" signature="ValidateFlightImageTest()[pri:2, instance:com.MMT.testcases.FlightSearchPageTest@eb21112]" name="ValidateFlightImageTest" duration-ms="539" started-at="2020-12-14T09:36:11 IST" finished-at="2020-12-14T09:36:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateFlightImageTest -->
+        <test-method status="PASS" signature="applicationkill()[pri:0, instance:com.MMT.testcases.FlightSearchPageTest@eb21112]" name="applicationkill" is-config="true" duration-ms="672" started-at="2020-12-14T09:36:11 IST" finished-at="2020-12-14T09:36:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applicationkill -->
+      </class> <!-- com.MMT.testcases.FlightSearchPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

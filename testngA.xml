@@ -3,7 +3,6 @@
 <suite name="SuiteA">
   <test name="TestA">
     <classes>
-      <class name="com.MMT.testcases.HotelSearchPageTest"/>
       <class name="com.MMT.testcases.HotelSearchResultPageTest"/>
     </classes>
   </test> <!-- TestA -->
