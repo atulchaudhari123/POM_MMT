@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="86105" started-at="2020-12-14T09:34:46 IST" finished-at="2020-12-14T09:36:12 IST">
+  <suite name="SuiteB (0)" duration-ms="201172" started-at="2020-12-24T11:47:39 IST" finished-at="2020-12-24T11:51:00 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="86105" started-at="2020-12-14T09:34:46 IST" finished-at="2020-12-14T09:36:12 IST">
-      <class name="com.MMT.testcases.FlightSearchPageTest">
-        <test-method status="PASS" signature="applicationSetup()[pri:0, instance:com.MMT.testcases.FlightSearchPageTest@eb21112]" name="applicationSetup" is-config="true" duration-ms="11854" started-at="2020-12-14T09:34:46 IST" finished-at="2020-12-14T09:34:58 IST">
+    <test name="TestB" duration-ms="201172" started-at="2020-12-24T11:47:39 IST" finished-at="2020-12-24T11:51:00 IST">
+      <class name="com.MMT.testcases.HotelReviewTestPage">
+        <test-method status="PASS" signature="applicationSetup()[pri:0, instance:com.MMT.testcases.HotelReviewTestPage@5656be13]" name="applicationSetup" is-config="true" duration-ms="31855" started-at="2020-12-24T11:47:40 IST" finished-at="2020-12-24T11:48:12 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- applicationSetup -->
-        <test-method status="PASS" signature="searchFieldTest(java.lang.String, java.lang.String)[pri:0, instance:com.MMT.testcases.FlightSearchPageTest@eb21112]" name="searchFieldTest" duration-ms="40647" started-at="2020-12-14T09:34:58 IST" data-provider="getData" finished-at="2020-12-14T09:35:39 IST">
+        <test-method status="FAIL" signature="verifyHotelSearchResult(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.MMT.testcases.HotelReviewTestPage@5656be13]" name="verifyHotelSearchResult" duration-ms="80271" started-at="2020-12-24T11:48:12 IST" data-provider="getData" finished-at="2020-12-24T11:49:32 IST">
           <params>
             <param index="0">
               <value>
@@ -20,42 +20,237 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[Mumbai]]>
+                <![CDATA[Rahul]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Patil]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[test1234@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9823074876]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='root']/div/div[3]/div/div[2]/div/div[2]/div[1]/div/a"}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-20FUL3E', ip: '192.168.43.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\atulc\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63325}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 2b6c4f6f334936f117d1235127e5b8b6
+*** Element info: {Using=xpath, value=//*[@id='root']/div/div[3]/div/div[2]/div/div[2]/div[1]/div/a}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='root']/div/div[3]/div/div[2]/div/div[2]/div[1]/div/a"}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-20FUL3E', ip: '192.168.43.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\atulc\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63325}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 2b6c4f6f334936f117d1235127e5b8b6
+*** Element info: {Using=xpath, value=//*[@id='root']/div/div[3]/div/div[2]/div/div[2]/div[1]/div/a}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy9.click(Unknown Source)
+at com.MMT.pages.HotelReview.validateHotelReview(HotelReview.java:43)
+at com.MMT.testcases.HotelReviewTestPage.verifyHotelSearchResult(HotelReviewTestPage.java:45)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1213)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHotelSearchResult -->
+        <test-method status="PASS" signature="applicationSetup()[pri:0, instance:com.MMT.testcases.HotelReviewTestPage@5656be13]" name="applicationSetup" is-config="true" duration-ms="20691" started-at="2020-12-24T11:49:32 IST" finished-at="2020-12-24T11:49:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applicationSetup -->
+        <test-method status="FAIL" signature="verifyHotelSearchResult(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.MMT.testcases.HotelReviewTestPage@5656be13]" name="verifyHotelSearchResult" duration-ms="67455" started-at="2020-12-24T11:49:53 IST" data-provider="getData" finished-at="2020-12-24T11:51:00 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jaipur]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Nitin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Patil]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[test1245@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9.823087465E9]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='root']/div/div[3]/div/div[2]/div/div[2]/div[1]/div/a"}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-20FUL3E', ip: '192.168.43.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\atulc\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63632}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: be06a74b55a2b717cc014972830e4a9b
+*** Element info: {Using=xpath, value=//*[@id='root']/div/div[3]/div/div[2]/div/div[2]/div[1]/div/a}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='root']/div/div[3]/div/div[2]/div/div[2]/div[1]/div/a"}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-20FUL3E', ip: '192.168.43.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\atulc\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63632}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: be06a74b55a2b717cc014972830e4a9b
+*** Element info: {Using=xpath, value=//*[@id='root']/div/div[3]/div/div[2]/div/div[2]/div[1]/div/a}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy9.click(Unknown Source)
+at com.MMT.pages.HotelReview.validateHotelReview(HotelReview.java:43)
+at com.MMT.testcases.HotelReviewTestPage.verifyHotelSearchResult(HotelReviewTestPage.java:45)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1213)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHotelSearchResult -->
+      </class> <!-- com.MMT.testcases.HotelReviewTestPage -->
+    </test> <!-- TestB -->
+  </suite> <!-- SuiteB (0) -->
+  <suite name="SuiteA" duration-ms="34982" started-at="2020-12-24T11:47:04 IST" finished-at="2020-12-24T11:47:39 IST">
+    <groups>
+    </groups>
+    <test name="TestA" duration-ms="34982" started-at="2020-12-24T11:47:04 IST" finished-at="2020-12-24T11:47:39 IST">
+      <class name="com.MMT.testcases.HotelSearchResultPageTest">
+        <test-method status="PASS" signature="applicationSetup()[pri:0, instance:com.MMT.testcases.HotelSearchResultPageTest@293a5bf6]" name="applicationSetup" is-config="true" duration-ms="16041" started-at="2020-12-24T11:47:04 IST" finished-at="2020-12-24T11:47:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applicationSetup -->
+        <test-method status="PASS" signature="verifyHotelSearchResult(java.lang.String)[pri:0, instance:com.MMT.testcases.HotelSearchResultPageTest@293a5bf6]" name="verifyHotelSearchResult" duration-ms="18902" started-at="2020-12-24T11:47:20 IST" data-provider="getData" finished-at="2020-12-24T11:47:39 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Delhi]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchFieldTest -->
-        <test-method status="PASS" signature="applicationkill()[pri:0, instance:com.MMT.testcases.FlightSearchPageTest@eb21112]" name="applicationkill" is-config="true" duration-ms="738" started-at="2020-12-14T09:35:39 IST" finished-at="2020-12-14T09:35:40 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- applicationkill -->
-        <test-method status="PASS" signature="applicationSetup()[pri:0, instance:com.MMT.testcases.FlightSearchPageTest@eb21112]" name="applicationSetup" is-config="true" duration-ms="15118" started-at="2020-12-14T09:35:40 IST" finished-at="2020-12-14T09:35:55 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- applicationSetup -->
-        <test-method status="PASS" signature="FlightSearchPageTitleTest()[pri:1, instance:com.MMT.testcases.FlightSearchPageTest@eb21112]" name="FlightSearchPageTitleTest" duration-ms="9" started-at="2020-12-14T09:35:55 IST" finished-at="2020-12-14T09:35:55 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FlightSearchPageTitleTest -->
-        <test-method status="PASS" signature="applicationkill()[pri:0, instance:com.MMT.testcases.FlightSearchPageTest@eb21112]" name="applicationkill" is-config="true" duration-ms="677" started-at="2020-12-14T09:35:55 IST" finished-at="2020-12-14T09:35:55 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- applicationkill -->
-        <test-method status="PASS" signature="applicationSetup()[pri:0, instance:com.MMT.testcases.FlightSearchPageTest@eb21112]" name="applicationSetup" is-config="true" duration-ms="15358" started-at="2020-12-14T09:35:55 IST" finished-at="2020-12-14T09:36:11 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- applicationSetup -->
-        <test-method status="PASS" signature="ValidateFlightImageTest()[pri:2, instance:com.MMT.testcases.FlightSearchPageTest@eb21112]" name="ValidateFlightImageTest" duration-ms="539" started-at="2020-12-14T09:36:11 IST" finished-at="2020-12-14T09:36:11 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateFlightImageTest -->
-        <test-method status="PASS" signature="applicationkill()[pri:0, instance:com.MMT.testcases.FlightSearchPageTest@eb21112]" name="applicationkill" is-config="true" duration-ms="672" started-at="2020-12-14T09:36:11 IST" finished-at="2020-12-14T09:36:12 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- applicationkill -->
-      </class> <!-- com.MMT.testcases.FlightSearchPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- verifyHotelSearchResult -->
+      </class> <!-- com.MMT.testcases.HotelSearchResultPageTest -->
+    </test> <!-- TestA -->
+  </suite> <!-- SuiteA -->
+  <suite name="SuiteB" duration-ms="0" started-at="2020-12-24T11:51:01 IST" finished-at="2020-12-24T11:51:01 IST">
+    <groups>
+    </groups>
+  </suite> <!-- SuiteB -->
 </testng-results>

@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="SuiteA">
+<suite name="SuiteB">
 
  <listeners>
   <listener class-name="com.MMT.ExtentReportListner.ExtentReporterNG"/>
   </listeners>
   
- 
-  <test name="TestA">
- 
-    <classes>
-      <class name="com.MMT.testcases.HotelSearchResultPageTest"/>
-    </classes>
-  </test> <!-- TestA -->
-</suite> <!-- SuiteA -->
+    <suite-files>  
+  <suite-file path="testngA.xml"/>
+  <suite-file path="testngB.xml"/>
+  </suite-files>
+   
+</suite> <!-- Suite -->

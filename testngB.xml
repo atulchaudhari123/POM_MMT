@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="SuiteB">
+
+ <listeners>
+  <listener class-name="com.MMT.ExtentReportListner.ExtentReporterNG"/>
+  </listeners>
+  
   <test name="TestB">
     <classes>
       <class name="com.MMT.testcases.HotelReviewTestPage"/>
